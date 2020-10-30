@@ -8,3 +8,7 @@ This repository contains the final deliverable for Linux lab. A commit is added 
 * This readme is added.
 * Install scripts is added.
 
+
+## Task2
+* task2/LED_1sec_1sec.sh is added
+* Install script is updated
