@@ -9,6 +9,8 @@ This repository contains the final deliverable for Linux lab. A commit is added 
 * Install scripts is added.
 
 
-## Task2
+## Task2 + 2A
 * task2/LED_1sec_1sec.sh is added
 * Install script is updated
+    * Must be run as root
+    * 
