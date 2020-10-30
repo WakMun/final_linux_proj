@@ -6,5 +6,5 @@ This repository contains the final deliverable for Linux lab. A commit is added 
 
 ### Task 1A
 * This readme is added.
-* Install.sh will be added 
+* Install scripts is added.
 
