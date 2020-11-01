@@ -1,0 +1,13 @@
+[Unit]
+Description=Memory/CPU logger
+Requires=mem_cpu_logger.service
+
+[Timer]
+#not necessary as the service unit name is the same as timer name.
+Unit=mem_cpu_logger.service
+AccuracySec=1s
+OnCalendar=*:*:0/5
+
+
+[Install]
+WantedBy=timers.target

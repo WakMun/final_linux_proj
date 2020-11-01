@@ -22,6 +22,7 @@ OFF="0"
 exportPin()
 {
     if [ ! -e /sys/class/gpio/gpio$1 ]; then
+        sleep 1
         echo $1 > /sys/class/gpio/export
     fi
 }
@@ -37,6 +38,7 @@ unexportPin()
 # Utility function to set a pin as an output
 setOutput()
 {
+    sleep 1
     echo "out" > /sys/class/gpio/gpio$1/direction
 }
 

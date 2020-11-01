@@ -29,3 +29,8 @@ This repository contains the final deliverable for Linux lab. A commit is added 
     * service unit: pdc.service 
 * install.sh updated to install and run the service at start up
 
+## Task 5 + 5A
+* task5 added which contains
+    * logger.timer
+    * Mem_CPU_logger.sh
+* install.sh updated to install timer unit 

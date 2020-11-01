@@ -1,0 +1,9 @@
+[Unit]
+Description=Memory/CPU logger
+Wants=mem_cpu_logger.timer
+
+[Service]
+ExecStart=/opt/pdc/logger/mem_cpu_logger.sh 
+
+#[Install]
+#WantedBy=multi-user.target

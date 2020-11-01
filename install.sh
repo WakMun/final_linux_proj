@@ -60,4 +60,16 @@ echo
 echo -e "${BOLD}${GREEN}Installing PDC Service (Task4)${NC}"
 cp -v ./task4/pdc.service /etc/systemd/system/pdc.service
 systemctl daemon-reload
+systemctl enable --now pdc.service
 #journalctl -u pdc.service
+echo
+
+echo -e "${BOLD}${GREEN}Installing logger Service (Task5)${NC}"
+mkdir -p -p ${INSTALL_PATH}/logger
+cp -v ./task5/mem_cpu_logger.sh ${INSTALL_PATH}/logger/
+chmod +x ${INSTALL_PATH}/logger/mem_cpu_logger.sh
+cp -v ./task5/mem_cpu_logger.service /etc/systemd/system/
+cp -v ./task5/mem_cpu_logger.timer /etc/systemd/system/
+systemctl daemon-reload
+systemctl enable --now mem_cpu_logger.timer
+#journalctl -u mem_cpu_logger.sh -f
