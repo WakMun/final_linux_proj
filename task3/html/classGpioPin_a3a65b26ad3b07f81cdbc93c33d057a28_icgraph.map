@@ -1,0 +1,4 @@
+<map id="GpioPin::SetDirection" name="GpioPin::SetDirection">
+<area shape="rect" id="node1" title="Set the Direction of a pin. It can have four possible values as per enum Direction." alt="" coords="184,5,344,32"/>
+<area shape="rect" id="node2" href="$classGpioPin.html#a47b6fae52cb46452a3bd28f5045fec10" title="Construct a new Gpio Pin object." alt="" coords="5,5,136,32"/>
+</map>

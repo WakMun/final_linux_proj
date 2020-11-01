@@ -1,0 +1,5 @@
+<map id="UI.h" name="UI.h">
+<area shape="rect" id="node1" title="Header for Ui class." alt="" coords="94,5,142,32"/>
+<area shape="rect" id="node2" href="$main__app_8cpp.html" title="starting point of the application." alt="" coords="5,80,119,107"/>
+<area shape="rect" id="node3" href="$UI_8cpp.html" title="implementation for Ui class" alt="" coords="143,80,205,107"/>
+</map>

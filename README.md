@@ -14,3 +14,12 @@ This repository contains the final deliverable for Linux lab. A commit is added 
 * Install script is updated
     * Must be run as root
     * Installation path: /opt/pdc/blinker/LED_1sec_1sec.sh
+
+
+## Task 3 + 3A
+* task3 added which contains:
+    * Architectural Documentation: ./html/index.html 
+    * Makefile added for buliding 
+    * Install.sh update to install app
+        * location: /opt/pdc/pdc/pdc_app
+
