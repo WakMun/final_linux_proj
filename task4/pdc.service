@@ -1,0 +1,9 @@
+[Unit]
+Description=Park Distance Control (pdc)
+
+[Service]
+#ExecStart=/home/pi/blinkcontrol.sh
+ExecStart=/opt/pdc/pdc/pdc_app 
+
+[Install]
+WantedBy=multi-user.target

@@ -15,9 +15,21 @@
 #include <chrono>
 #include <thread>
 #include <iostream>
+#include <csignal>
+
+bool exit_flag=false;
+
+void signal_handler(int signal)
+{
+    exit_flag = true;
+    std::cout << " Exiting ... \n";
+}
+
 using namespace std::chrono_literals;
 int main()
 {
+
+    std::signal(SIGINT, signal_handler);
 
     // gpioPin LED(23, gpioPin::Direction::Out);
 
@@ -35,7 +47,7 @@ int main()
     Ui my_ui;
     int dist;
 
-    while (true)
+    while (exit_flag==false)
     {
         //std::cout << "distance: " << myus_snsr.get_dist_cm() << std::endl;
         dist = myus_snsr.get_dist_cm();

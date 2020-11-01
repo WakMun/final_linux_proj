@@ -57,3 +57,7 @@ cp -v ./task3/build/pdc_app ${INSTALL_PATH}/pdc/pdc_app
 echo
 
 
+echo -e "${BOLD}${GREEN}Installing PDC Service (Task4)${NC}"
+cp -v ./task4/pdc.service /etc/systemd/system/pdc.service
+systemctl daemon-reload
+#journalctl -u pdc.service

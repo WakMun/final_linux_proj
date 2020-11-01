@@ -20,6 +20,12 @@ This repository contains the final deliverable for Linux lab. A commit is added 
 * task3 added which contains:
     * Architectural Documentation: ./html/index.html 
     * Makefile added for buliding 
-    * Install.sh update to install app
-        * location: /opt/pdc/pdc/pdc_app
+* Install.sh updated to install pdc_app
+    * location: /opt/pdc/pdc/pdc_app
+
+
+## Task 4
+* task4 added which contains:
+    * service unit: pdc.service 
+* install.sh updated to install and run the service at start up
 
