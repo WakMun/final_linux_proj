@@ -73,3 +73,11 @@ cp -v ./task5/mem_cpu_logger.timer /etc/systemd/system/
 systemctl daemon-reload
 systemctl enable --now mem_cpu_logger.timer
 #journalctl -u mem_cpu_logger.sh -f
+echo
+
+echo -e "${BOLD}${GREEN}Installing Pdc Kernel Module (Task6)${NC}"
+mkdir -p  /lib/modules/$(uname -r)/kernel/drivers/pdc
+cp -v ./task6/pdcKern.ko /lib/modules/$(uname -r)/kernel/drivers/pdc/
+echo "kernel/pdc/pdcKern.ko:" >> /lib/modules/$(uname -r)/modules.dep
+depmod
+echo "pdcKern" >> /etc/modules-load.d/modules.conf

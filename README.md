@@ -31,6 +31,15 @@ This repository contains the final deliverable for Linux lab. A commit is added 
 
 ## Task 5 + 5A
 * task5 added which contains
-    * logger.timer
-    * Mem_CPU_logger.sh
-* install.sh updated to install timer unit 
+    * mem_cpu_logger.timer
+    * mem_cpu_logger.service
+    * mem_cpu_logger.sh
+* install.sh updated to install and enable timer/service unit 
+
+## Task 6
+* task6 folder added which contains
+    * compiled kernel module: pdcKern.ko
+    * Makefile for kernel module
+    * source: pdcKern.c 
+* install.sh updated to install pdcKern.ko so that it is active on boot
+
